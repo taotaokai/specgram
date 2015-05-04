@@ -1,24 +1,26 @@
 # specgram
 
-Dependent libaries:
+make spectrogram from a sac file
+
+__Dependent libaries:__
 
   netcdf, fftw
 
 
-Programs:
+__Programs:__
 
   1. src/specgram.c: make S-transform of a given sac file.
 
-  2. aux/specgram_stack.c: auxiliary program to stack several output nc files from
+  2. aux/specgram\_stack.c: auxiliary program to stack several output nc files from
       specgram
 
 
-How to use:
+__How to use:__
 
   execute binaries in bin/ without any argument will print out help document.
 
 
-How to compile:
+__How to compile:__
 
   excute ./compile.sh 
 
