@@ -22,5 +22,5 @@ How to compile:
 
   excute ./compile.sh 
 
-#  You need to modify compile.sh by adding netcdf and fftw paths 
-#    in to C_INCLUDE_PATH and LIBRARY_PATH, if they are not in the path already.
+  You need to modify compile.sh by adding netcdf and fftw paths 
+    in to C_INCLUDE_PATH and LIBRARY_PATH, if they are not in the path already.
