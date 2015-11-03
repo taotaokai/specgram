@@ -152,8 +152,8 @@ int lanczos_interp(
     sum = 0.0;
     for (nn=n0; nn<n1; nn++) {
       /* resp: band-limited response at position nf from sample nn
-       * DSINC is executed with a sequence point in between
-       * to avoid undefined operation on global variable dsincarg */
+       * NOTE: DSINC is only executed once in each expression;
+       *  this is to avoid undefined operation on global variable dsincarg */
       resp = DSINC(nn-nf);
       sum += resp * DSINC((nn-nf)/na) * F[nn]; 
     }
